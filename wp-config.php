@@ -84,3 +84,6 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+/** Added To Allow Acces(Read And Write )Files Permessions to Some Plugins In Order to resolve error */
+define( 'FS_METHOD', 'direct' );
